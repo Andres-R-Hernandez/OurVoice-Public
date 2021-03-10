@@ -1,0 +1,2 @@
+class RpjoinersController < ApplicationController
+end

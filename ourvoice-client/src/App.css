@@ -1,0 +1,285 @@
+html, body, #root {
+  height:100%;
+  font-family: Optima, sans-serif;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+#backimg {
+  height: 100%;
+  opacity: .15;
+  background-image: url('../src/Images/continental-congress-gettyimages-1889581.jpg');
+  background-position: center;
+  background-repeat:repeat;
+}
+
+#backimgAllPollsComplete {
+  z-index: 1;
+  height: 100%;
+  background-image: url('../src/Images/dancingkid.gif');
+  background-position: center;
+  background-repeat:repeat;
+}
+
+#app {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%
+}
+
+/* All Components Below are within App*/
+
+header {
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+#main {
+  width: 75%;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: scroll;
+  background-color: rgba(193, 193, 193, 0.5);
+  border: ridge;
+}
+
+footer {
+  height: 2.5rem;
+  border-top: 1px solid black;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center
+}
+
+#navbar {
+  padding: 1.25rem;
+  /* font-size: small; */
+  height: 100%;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+.pageTitle:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.navbarButtons {
+  text-decoration: none;
+  padding: 5px;
+  border-style: solid;
+  border-color: black;
+}
+
+.navbarButtons:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.navbarButtons:hover {
+  background-color: yellow;
+}
+
+/* Elements below are within the main container */
+button {
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Landing Components */
+#landingContainer {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Dashboard Components */
+#dashboard {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+
+#openPolls {
+  flex-grow: 0;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#cards {
+  overflow: scroll;
+  /* height: 75%; */
+}
+
+.pollCard {
+  text-align: right;
+  border-style: groove;
+  margin: 20px;
+  padding: 7px;
+  box-shadow: -5px 10px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.pollCardActive {
+  text-align: right;
+  border-style: groove;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: -5px 10px;
+  border-radius: 12px;
+  background-color: rgb(180, 180, 255);
+}
+
+.pollCard:hover {
+  cursor: pointer;
+  /* margin: 20px; */
+  padding: 20px;
+  /* box-shadow: -5px 10px;
+  border-radius: 12px; */
+}
+
+#votedPoll {
+  flex-grow: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  /* justify-content: space-between; */
+}
+
+#poll {
+flex-grow: 0;
+margin-left: 25px 
+}
+
+#pieChart {
+  /* height: 350px; */
+  width: 600px;
+  flex-shrink: 0;
+  /* flex-grow: 1; */
+  margin-left: 25px 
+}
+
+#dataTable {
+  margin-left: 25px 
+
+}
+
+table, td {
+  border: 1px solid black;
+  background-color: whitesmoke;
+  text-align: center;
+}
+th {
+  padding: 5px;
+  height: 2rem;
+  text-align: center;
+  border: 1px solid black;
+}
+
+/* Account Page Components */
+#account {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+#accountDetails {
+  text-align: justify;
+}
+
+/* Login Page */
+
+#loginContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#loginBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid;
+  padding: 50px;
+  background-color: whitesmoke;
+  border-radius: 25px;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formItem {
+  padding: 3px
+}
+
+/* Create A Poll Components */
+
+#createPollContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#pollFormBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid;
+  padding: 50px;
+  background-color: whitesmoke;
+  border-radius: 25px;
+}
+
+#pollForm {
+  display: flex;
+  flex-direction: column;
+}
+
+/* MyRepresentation Comoponents */
+
+#representationContainer {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+
+#userRepsBox {
+  flex-grow: 0;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+}
+
