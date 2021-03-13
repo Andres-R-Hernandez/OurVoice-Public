@@ -10,3 +10,7 @@ Intended primarily for local jurisdiction, but can be scaled to apply to nationa
 We want to help constituents feel more involved in politics, and to provide more data for elected officials to make informed decisions.
 
 Politicians hate this one easy trick to become more informed of how a constituency is polling.
+
+# Notes for use
+
+- You will need to generate your own Google API key for representative functionality. Otherwise, you will not be able to test account creation or representation refresh.
