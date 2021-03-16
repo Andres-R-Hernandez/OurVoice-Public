@@ -1,6 +1,6 @@
 # OurVoice
 
-Link below for 2min video demo:
+Link for 2min video demo:
 https://youtu.be/ty3305a4h68
 
 Welcome to OurVoice
